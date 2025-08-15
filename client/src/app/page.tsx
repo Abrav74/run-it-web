@@ -31,8 +31,8 @@ export default function Home() {
             Welcome to SportMeetup!
           </Typography>
           <Typography variant="h6" color="text.secondary" gutterBottom>
-            Find and join local sports meetups, connect with players, and stay
-            active.
+            Find and join local sports meetups, create tournaments, and connect
+            with other atheletes.
           </Typography>
           <Stack
             direction="row"
