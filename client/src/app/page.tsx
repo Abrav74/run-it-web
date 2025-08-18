@@ -12,6 +12,7 @@ import {
   CardContent,
   CardMedia,
 } from "@mui/material";
+import Link from "next/link";
 import Grid from "@mui/material/Grid";
 
 export default function Home() {
@@ -23,6 +24,9 @@ export default function Home() {
             SportMeetup
           </Typography>
           <Button color="inherit">Login</Button>
+          <Button color="inherit" component={Link} href="/create-account">
+            Create Account
+          </Button>
         </Toolbar>
       </AppBar>
       <Container maxWidth="md" sx={{ mt: 8 }}>
