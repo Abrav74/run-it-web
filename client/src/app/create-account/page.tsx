@@ -17,7 +17,7 @@ export default function CreateAccount() {
             Create Account
           </Typography>
           <Typography variant="body1" color="text.secondary" gutterBottom>
-            Sign up to join SportMeetup and connect with other athletes!
+            Sign up to join RunIt and connect with other athletes!
           </Typography>
           <Box component="form" sx={{ mt: 2 }}>
             <TextField fullWidth label="Name" margin="normal" required />

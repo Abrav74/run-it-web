@@ -32,7 +32,7 @@ export default function Home() {
       <Container maxWidth="md" sx={{ mt: 8 }}>
         <Paper elevation={3} sx={{ p: 4, textAlign: "center" }}>
           <Typography variant="h3" component="h1" gutterBottom color="primary">
-            Welcome to SportMeetup!
+            Welcome to RunIt!
           </Typography>
           <Typography variant="h6" color="text.secondary" gutterBottom>
             Find and join local sports meetups, create tournaments, and connect
