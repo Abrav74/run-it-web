@@ -1,5 +1,12 @@
 "use client";
-import { Box, Container, Typography, Paper, TextField, Button } from "@mui/material";
+import {
+  Box,
+  Container,
+  Typography,
+  Paper,
+  TextField,
+  Button,
+} from "@mui/material";
 
 export default function EditAccount() {
   return (
@@ -10,13 +17,36 @@ export default function EditAccount() {
             Edit Account Details
           </Typography>
           <Typography variant="body1" color="text.secondary" gutterBottom>
-            Update your information below and save changes.
+            Update your account information below and save changes.
           </Typography>
           <Box component="form" sx={{ mt: 2 }}>
-            <TextField fullWidth label="Name" margin="normal" defaultValue="John Doe" required />
-            <TextField fullWidth label="Email" type="email" margin="normal" defaultValue="john@example.com" required />
-            <TextField fullWidth label="Password" type="password" margin="normal" />
-            <Button variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+            <TextField
+              fullWidth
+              label="Name"
+              margin="normal"
+              defaultValue="John Doe"
+              required
+            />
+            <TextField
+              fullWidth
+              label="Email"
+              type="email"
+              margin="normal"
+              defaultValue="john@example.com"
+              required
+            />
+            <TextField
+              fullWidth
+              label="Password"
+              type="password"
+              margin="normal"
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              fullWidth
+              sx={{ mt: 2 }}
+            >
               Save Changes
             </Button>
           </Box>
