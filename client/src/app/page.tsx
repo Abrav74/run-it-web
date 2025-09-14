@@ -4,8 +4,6 @@ import {
   Container,
   Typography,
   Button,
-  AppBar,
-  Toolbar,
   Paper,
   Stack,
   Card,
@@ -18,18 +16,7 @@ import Grid from "@mui/material/Grid";
 export default function Home() {
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "#f5f5f5" }}>
-      <AppBar position="fixed" color="primary">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            SportMeetup
-          </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit" component={Link} href="/create-account">
-            Create Account
-          </Button>
-        </Toolbar>
-      </AppBar>
-      <Container maxWidth="md" sx={{ mt: 8 }}>
+      <Container maxWidth="md">
         <Paper elevation={3} sx={{ p: 4, textAlign: "center" }}>
           <Typography variant="h3" component="h1" gutterBottom color="primary">
             Welcome to RunIt!

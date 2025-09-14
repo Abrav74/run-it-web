@@ -6,21 +6,29 @@ import {
   Paper,
   TextField,
   Button,
+  Stack,
 } from "@mui/material";
+import { useState } from "react";
 
-export default function CreateAccount() {
+export default function AuthPage() {
+  const [mode, setMode] = useState<"login" | "create">("create");
+
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "#f5f5f5", pt: 8 }}>
       <Container maxWidth="sm">
         <Paper elevation={3} sx={{ p: 4, mt: 4 }}>
           <Typography variant="h4" component="h1" gutterBottom color="primary">
-            Create Account
+            {mode === "create" ? "Create Account" : "Login"}
           </Typography>
           <Typography variant="body1" color="text.secondary" gutterBottom>
-            Sign up to join RunIt and connect with other athletes!
+            {mode === "create"
+              ? "Sign up to join RunIt and connect with other athletes!"
+              : "Log in to your RunIt account."}
           </Typography>
           <Box component="form" sx={{ mt: 2 }}>
-            <TextField fullWidth label="Name" margin="normal" required />
+            {mode === "create" && (
+              <TextField fullWidth label="Name" margin="normal" required />
+            )}
             <TextField
               fullWidth
               label="Email"
@@ -41,9 +49,19 @@ export default function CreateAccount() {
               fullWidth
               sx={{ mt: 2 }}
             >
-              Create Account
+              {mode === "create" ? "Create Account" : "Login"}
             </Button>
           </Box>
+          <Stack direction="row" justifyContent="center" sx={{ mt: 2 }}>
+            <Button
+              color="secondary"
+              onClick={() => setMode(mode === "create" ? "login" : "create")}
+            >
+              {mode === "create"
+                ? "Already have an account? Login"
+                : "Don't have an account? Create one"}
+            </Button>
+          </Stack>
         </Paper>
       </Container>
     </Box>
