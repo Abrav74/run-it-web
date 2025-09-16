@@ -7,7 +7,9 @@ export default function Navbar() {
     <AppBar position="fixed" color="primary">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          SportMeetup
+          <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
+            SportMeetup
+          </Link>
         </Typography>
         <Button color="inherit">Login</Button>
         <Button color="inherit" component={Link} href="/create-account">
