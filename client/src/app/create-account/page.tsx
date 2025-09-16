@@ -11,7 +11,7 @@ import {
 import { useState } from "react";
 
 export default function AuthPage() {
-  const [mode, setMode] = useState<"login" | "create">("create");
+  const [mode, setMode] = useState<"login" | "create">("login");
 
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "#f5f5f5", pt: 8 }}>
@@ -55,11 +55,11 @@ export default function AuthPage() {
           <Stack direction="row" justifyContent="center" sx={{ mt: 2 }}>
             <Button
               color="secondary"
-              onClick={() => setMode(mode === "create" ? "login" : "create")}
+              onClick={() => setMode(mode === "login" ? "create" : "login")}
             >
-              {mode === "create"
-                ? "Already have an account? Login"
-                : "Don't have an account? Create one"}
+              {mode === "login"
+                ? "Don't have an account? Create one"
+                : "Already have an account? Login"}
             </Button>
           </Stack>
         </Paper>

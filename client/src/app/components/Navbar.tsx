@@ -11,9 +11,8 @@ export default function Navbar() {
             SportMeetup
           </Link>
         </Typography>
-        <Button color="inherit">Login</Button>
         <Button color="inherit" component={Link} href="/create-account">
-          Create Account
+          Login / Create Account
         </Button>
       </Toolbar>
     </AppBar>
