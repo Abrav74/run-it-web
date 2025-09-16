@@ -16,7 +16,7 @@ import Grid from "@mui/material/Grid";
 export default function Home() {
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "#f5f5f5" }}>
-      <Container maxWidth="md">
+      <Container maxWidth="md" sx={{ pt: 4 }}>
         <Paper elevation={3} sx={{ p: 4, textAlign: "center" }}>
           <Typography variant="h3" component="h1" gutterBottom color="primary">
             Welcome to RunIt!
