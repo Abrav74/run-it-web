@@ -47,7 +47,7 @@ export default function Home() {
                 <CardMedia
                   component="img"
                   height="180"
-                  image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                  image="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=400&q=80" // Soccer themed
                   alt="Soccer Meetup"
                 />
                 <CardContent>
@@ -66,7 +66,7 @@ export default function Home() {
                 <CardMedia
                   component="img"
                   height="180"
-                  image="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80"
+                  image="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Basketball: player dunking
                   alt="Basketball Meetup"
                 />
                 <CardContent>
@@ -84,7 +84,7 @@ export default function Home() {
                 <CardMedia
                   component="img"
                   height="180"
-                  image="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                  image="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=2800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Running: group of runners
                   alt="Running Meetup"
                 />
                 <CardContent>
